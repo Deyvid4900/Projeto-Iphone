@@ -1,0 +1,7 @@
+const ua = navigator.userAgent.toLowerCase()
+const isAndroid = ua.includes('android')
+const androidDeviceHandler = () => {
+  androidTile = document.querySelector('.section-switchers')
+  if (isAndroid) androidTile.style.display = 'block'
+}
+androidDeviceHandler()
